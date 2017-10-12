@@ -15,4 +15,7 @@
 * Implement squareroot function
 * Implement an exponent function (bonus: now try in log(n) time)
 * Write a multiply function that multiples 2 integers without using ```*```
+* Given a 2D array of 1s and 0s, count the number of "islands of 1s" 
 * Given a function rand5() that returns a random int between 0 and 5, implement rand7()
+* Print all of the pairs of matching parens of length n.
+
