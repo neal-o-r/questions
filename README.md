@@ -18,4 +18,6 @@
 * Given a 2D array of 1s and 0s, count the number of "islands of 1s" 
 * Given a function rand5() that returns a random int between 0 and 5, implement rand7()
 * Print all of the pairs of matching parens of length n.
+* Check if parens are balanced.
+* Implement sorting algorithms
 
