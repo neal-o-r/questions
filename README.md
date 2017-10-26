@@ -20,4 +20,5 @@
 * Print all of the pairs of matching parens of length n.
 * Check if parens are balanced.
 * Implement sorting algorithms
-
+* Rotate a 2d list in-place
+* Find all Pythagorean triples < n
