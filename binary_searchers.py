@@ -20,7 +20,7 @@ def binary_search_index(arr, n, i=0):
 
 	pivot = arr[len(arr)//2]
 	if pivot == n:
-		return i + 1
+		return i + len(arr)//2
 	if len(arr) == 1:
 		return False
 
