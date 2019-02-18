@@ -1,12 +1,10 @@
-
-
 def squareroot(n):
 
-	guess = 1
-	eps = 0.00001
-	
-	while abs(guess * guess - n) > eps:
+    guess = 1
+    eps = 0.00001
 
-		guess += (n - guess*guess) / (2 * guess)
+    while abs(guess * guess - n) > eps:
 
-	return guess
+        guess += (n - guess * guess) / (2 * guess)
+
+    return guess

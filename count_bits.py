@@ -1,5 +1,6 @@
 # count set bits, the Brian Kernighan way
 
+
 def count_bit(integer):
 
     count = 0
@@ -11,8 +12,7 @@ def count_bit(integer):
 
     return count
 
+
 n = 12345
 
-print(count_bit(n) 
-	== str(bin(n)).count('1'))
-
+print(count_bit(n) == str(bin(n)).count("1"))
