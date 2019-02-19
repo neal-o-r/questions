@@ -55,29 +55,19 @@ def merge_sort(x):
     return result
 
 
-def quick_sort(x):
-
-    less, more, equal = [], [], []
-    if len(x) > 1:
-        pivot = x[0]
-        for v in x:
-            if v < pivot:
-                less.append(v)
-            elif v > pivot:
-                more.append(v)
-            else:
-                equal.append(v)
-        return quick_sort(less) + equal + quick_sort(more)
-
-    else:
+def quicksort(x):
+    if len(x) < 2:
         return x
+    head, *tail = x
+    less = quicksort([i for i in tail if i < head])
+    more = quicksort([i for i in tail if i >= head])
+    return less + [head] + more
 
 
 def selection_sort(x):
 
     n = len(x)
     for i in range(n):
-
         min_x = i
         for j in range(i, n):
             if x[j] < x[min_x]:
