@@ -23,8 +23,6 @@ def balanced_parens(exp):
         if c == ")":
             try:
                 a = s.pop()
-                if a != "(":
-                    return False
             except:
                 return False
 

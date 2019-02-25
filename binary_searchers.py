@@ -13,7 +13,7 @@ def binary_search(lst, val):
         return binary_search(lst[i:], val)
 
 
-# index of n in arr
+# index of n in arr, doesn't gracefully exits if value doesn't exist
 def binary_search_index(lst, val, offset=0):
     i = len(lst) // 2
     if lst[i] == val:
