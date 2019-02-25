@@ -1,31 +1,24 @@
 
 
 # is element n in arr
-def binary_search(arr, n):
-
-    pivot = arr[len(arr) // 2]
-    if pivot == n:
+def binary_search(lst, val):
+    i = len(lst) // 2
+    if len(lst) is 1 and lst[i] == val:
         return True
-    if len(arr) == 1:
+    elif len(lst) is 1 and lst[i] != val:
         return False
-
-    if pivot > n:
-        return binary_search(arr[: len(arr) // 2], n)
+    elif lst[i] > val:
+        return binary_search(lst[:i], val)
     else:
-        return binary_search(arr[len(arr) // 2 :], n)
+        return binary_search(lst[i:], val)
 
 
 # index of n in arr
-def binary_search_index(arr, n, i=0):
-
-    pivot = arr[len(arr) // 2]
-    if pivot == n:
-        return i + len(arr) // 2
-    if len(arr) == 1:
-        return False
-
-    if pivot > n:
-        return binary_search_index(arr[: len(arr) // 2], n, i)
+def binary_search_index(lst, val, offset=0):
+    i = len(lst) // 2
+    if lst[i] == val:
+        return i + offset
+    elif lst[i] > val:
+        return binary_search_index(lst[:i], val)
     else:
-        i += len(arr) // 2
-        return binary_search_index(arr[len(arr) // 2 :], n, i)
+        return binary_search_index(lst[i:], val, offset=i+offset)
