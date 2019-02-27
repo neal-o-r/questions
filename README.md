@@ -23,3 +23,4 @@
 * Rotate a 2d list in-place
 * Find all Pythagorean triples < n
 * Sample from a given PDF using a BST.
+* How many ways can you make change from a given set of coins?
