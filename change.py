@@ -34,6 +34,7 @@ def make_change_limited(amount, coins=denoms, partial=[]):
 
 # can be done in a generator like this, a bit cleaner i think
 # unlike the other this code works from the bottom up
+# (in my limited checks this seems to be quite a bit faster, I guess python prefers generators)
 def make_change_generator(amount, coins=denoms, partial=[], partial_sum=0):
     if partial_sum == amount:
         yield partial
